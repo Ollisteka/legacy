@@ -1,8 +1,27 @@
-﻿namespace Emails
+﻿using System.Collections.Generic;
+
+namespace Emails
 {
 	public class NewRateEmailMessager
 	{
+		private readonly Dictionary<AccountType, string> respect = new Dictionary<AccountType, string>()
+		{
+			[AccountType.Cheque] = "chequing account",
+			[AccountType.Credit] = "credit card",
+			[AccountType.Savings] = "on line savings account",
+		};
+		private readonly Dictionary<AccountType, string> newRates = new Dictionary<AccountType, string>()
+		{
+			[AccountType.Cheque] = "The interest rate at which you earn interest has changed to {0}%.",
+			[AccountType.Credit] = "The interest rate for which you will be charged for new purchases is now {0}%",
+			[AccountType.Savings] = "Your savings interest rate has changed to {0}%",
+		};
 		public EmailMessage CreateMessage(string customerName, AccountType accountType, decimal newRate)
+		{
+			return CreateMessage(customerName, accountType, newRate, Config.Local);
+		}
+
+		public EmailMessage CreateMessage(string customerName, AccountType accountType, decimal newRate, Config config)
 		{
 			var message = new EmailMessage();
 
@@ -13,44 +32,20 @@
 			sb.AppendLine();
 
 			sb.Append("We are sending you this message with respect to your ");
-			switch (accountType)
-			{
-				case AccountType.Cheque:
-					sb.Append("chequing account");
-					break;
-				case AccountType.Savings:
-					sb.Append("on line savings account");
-					break;
-				case AccountType.Credit:
-					sb.Append("credit card");
-					break;
-			}
+			sb.Append(respect[accountType]);
 
 			sb.AppendLine();
 			sb.AppendLine();
 
 
-			if (Config.Local.IncreaseRate)
+			if (config.IncreaseRate)
 			{
-				newRate *= Config.Local.IncreaseRateFactor;
+				newRate *= config.IncreaseRateFactor;
 			}
-			switch (accountType)
-			{
-				case AccountType.Cheque:
-					sb.AppendFormatLine("The interest rate at which you earn interest has changed to {0}%.",
-						newRate);
-					break;
-				case AccountType.Savings:
-					sb.AppendFormatLine("Your savings interest rate has changed to {0}%", newRate);
-					break;
-				case AccountType.Credit:
-					sb.AppendFormatLine(
-						"The interest rate for which you will be charged for new purchases is now {0}%", newRate);
-					break;
-			}
+			sb.AppendFormatLine(newRates[accountType], newRate);
+
 			if (newRate > 0.1m)
 				message.Important = true;
-
 
 			sb.AppendLine();
 			sb.AppendLine();

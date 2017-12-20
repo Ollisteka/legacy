@@ -1,0 +1,252 @@
+﻿[Olga,Cheque,0.099009900990099009900990099] => new EmailMessage()
+{
+    Important = False
+    Subject = "New rate!"
+    Body = Dear Olga
+
+We are sending you this message with respect to your chequing account
+
+The interest rate at which you earn interest has changed to 0,1000000000000000000000000000%.
+
+
+Kind regards - your bank.
+
+}
+[Olga,Cheque,0.0099009900990099009900990099] => new EmailMessage()
+{
+    Important = False
+    Subject = "New rate!"
+    Body = Dear Olga
+
+We are sending you this message with respect to your chequing account
+
+The interest rate at which you earn interest has changed to 0,0100000000000000000000000000%.
+
+
+Kind regards - your bank.
+
+}
+[Olga,Cheque,0.198019801980198019801980198] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Olga
+
+We are sending you this message with respect to your chequing account
+
+The interest rate at which you earn interest has changed to 0,2000000000000000000000000000%.
+
+
+Kind regards - your bank.
+
+}
+[Olga,Credit,0.099009900990099009900990099] => new EmailMessage()
+{
+    Important = False
+    Subject = "New rate!"
+    Body = Dear Olga
+
+We are sending you this message with respect to your credit card
+
+The interest rate for which you will be charged for new purchases is now 0,1000000000000000000000000000%
+
+
+Kind regards - your bank.
+
+}
+[Olga,Credit,0.0099009900990099009900990099] => new EmailMessage()
+{
+    Important = False
+    Subject = "New rate!"
+    Body = Dear Olga
+
+We are sending you this message with respect to your credit card
+
+The interest rate for which you will be charged for new purchases is now 0,0100000000000000000000000000%
+
+
+Kind regards - your bank.
+
+}
+[Olga,Credit,0.198019801980198019801980198] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Olga
+
+We are sending you this message with respect to your credit card
+
+The interest rate for which you will be charged for new purchases is now 0,2000000000000000000000000000%
+
+
+Kind regards - your bank.
+
+}
+[Olga,Savings,0.099009900990099009900990099] => new EmailMessage()
+{
+    Important = False
+    Subject = "New rate!"
+    Body = Dear Olga
+
+We are sending you this message with respect to your on line savings account
+
+Your savings interest rate has changed to 0,1000000000000000000000000000%
+
+
+Kind regards - your bank.
+
+}
+[Olga,Savings,0.0099009900990099009900990099] => new EmailMessage()
+{
+    Important = False
+    Subject = "New rate!"
+    Body = Dear Olga
+
+We are sending you this message with respect to your on line savings account
+
+Your savings interest rate has changed to 0,0100000000000000000000000000%
+
+
+Kind regards - your bank.
+
+}
+[Olga,Savings,0.198019801980198019801980198] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Olga
+
+We are sending you this message with respect to your on line savings account
+
+Your savings interest rate has changed to 0,2000000000000000000000000000%
+
+
+Kind regards - your bank.
+
+}
+[Evgeniy,Cheque,0.099009900990099009900990099] => new EmailMessage()
+{
+    Important = False
+    Subject = "New rate!"
+    Body = Dear Evgeniy
+
+We are sending you this message with respect to your chequing account
+
+The interest rate at which you earn interest has changed to 0,1000000000000000000000000000%.
+
+
+Kind regards - your bank.
+
+}
+[Evgeniy,Cheque,0.0099009900990099009900990099] => new EmailMessage()
+{
+    Important = False
+    Subject = "New rate!"
+    Body = Dear Evgeniy
+
+We are sending you this message with respect to your chequing account
+
+The interest rate at which you earn interest has changed to 0,0100000000000000000000000000%.
+
+
+Kind regards - your bank.
+
+}
+[Evgeniy,Cheque,0.198019801980198019801980198] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Evgeniy
+
+We are sending you this message with respect to your chequing account
+
+The interest rate at which you earn interest has changed to 0,2000000000000000000000000000%.
+
+
+Kind regards - your bank.
+
+}
+[Evgeniy,Credit,0.099009900990099009900990099] => new EmailMessage()
+{
+    Important = False
+    Subject = "New rate!"
+    Body = Dear Evgeniy
+
+We are sending you this message with respect to your credit card
+
+The interest rate for which you will be charged for new purchases is now 0,1000000000000000000000000000%
+
+
+Kind regards - your bank.
+
+}
+[Evgeniy,Credit,0.0099009900990099009900990099] => new EmailMessage()
+{
+    Important = False
+    Subject = "New rate!"
+    Body = Dear Evgeniy
+
+We are sending you this message with respect to your credit card
+
+The interest rate for which you will be charged for new purchases is now 0,0100000000000000000000000000%
+
+
+Kind regards - your bank.
+
+}
+[Evgeniy,Credit,0.198019801980198019801980198] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Evgeniy
+
+We are sending you this message with respect to your credit card
+
+The interest rate for which you will be charged for new purchases is now 0,2000000000000000000000000000%
+
+
+Kind regards - your bank.
+
+}
+[Evgeniy,Savings,0.099009900990099009900990099] => new EmailMessage()
+{
+    Important = False
+    Subject = "New rate!"
+    Body = Dear Evgeniy
+
+We are sending you this message with respect to your on line savings account
+
+Your savings interest rate has changed to 0,1000000000000000000000000000%
+
+
+Kind regards - your bank.
+
+}
+[Evgeniy,Savings,0.0099009900990099009900990099] => new EmailMessage()
+{
+    Important = False
+    Subject = "New rate!"
+    Body = Dear Evgeniy
+
+We are sending you this message with respect to your on line savings account
+
+Your savings interest rate has changed to 0,0100000000000000000000000000%
+
+
+Kind regards - your bank.
+
+}
+[Evgeniy,Savings,0.198019801980198019801980198] => new EmailMessage()
+{
+    Important = True
+    Subject = "New rate!"
+    Body = Dear Evgeniy
+
+We are sending you this message with respect to your on line savings account
+
+Your savings interest rate has changed to 0,2000000000000000000000000000%
+
+
+Kind regards - your bank.
+
+}
