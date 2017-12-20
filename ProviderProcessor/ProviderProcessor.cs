@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using log4net;
+using log4net.Util;
 using Newtonsoft.Json;
 using ProviderProcessing.ProcessReports;
 using ProviderProcessing.ProviderDatas;
@@ -11,11 +12,15 @@ namespace ProviderProcessing
 	public class ProviderProcessor
 	{
 		private static readonly ILog log = LogManager.GetLogger(typeof(ProviderProcessor));
-		private readonly ProviderRepository repo;
+		private readonly IProviderRepository repo;
+		private readonly ProductsReference productsReference;
+		private readonly MeasureUnitsReference measureUnitsReference;
 
-		public ProviderProcessor()
+		public ProviderProcessor(ProductsReference productsReference=null, MeasureUnitsReference measureUnitsReference=null, IProviderRepository repo = null)
 		{
-			repo = new ProviderRepository();
+			this.productsReference = productsReference ?? ProductsReference.GetInstance();
+			this.measureUnitsReference = measureUnitsReference ?? MeasureUnitsReference.GetInstance();
+			this.repo = repo ?? new ProviderRepository();
 		}
 
 		public ProcessReport ProcessProviderData(string message)
@@ -64,10 +69,9 @@ namespace ProviderProcessing
 
 		private IEnumerable<ProductValidationResult> ValidateNames(ProductData[] data)
 		{
-			var reference = ProductsReference.GetInstance();
 			foreach (var product in data)
 			{
-				if (!reference.FindCodeByName(product.Name).HasValue)
+				if (!productsReference.FindCodeByName(product.Name).HasValue)
 					yield return new ProductValidationResult(product,
 						"Unknown product name", ProductValidationSeverity.Error);
 			}
@@ -84,8 +88,7 @@ namespace ProviderProcessing
 
 		private bool IsValidMeasureUnitCode(string measureUnitCode)
 		{
-			var reference = MeasureUnitsReference.GetInstance();
-			return reference.FindByCode(measureUnitCode) != null;
+			return measureUnitsReference.FindByCode(measureUnitCode) != null;
 		}
 
 		private string FormatData(ProviderData data)

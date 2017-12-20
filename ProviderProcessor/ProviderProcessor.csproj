@@ -106,6 +106,8 @@
   <ItemGroup>
     <Compile Include="ProcessReports\ProductValidationResult.cs" />
     <Compile Include="ProcessReports\ProductValidationSeverity.cs" />
+    <Compile Include="ProductValidator.cs" />
+    <Compile Include="ProviderProcessor_Should.cs" />
     <Compile Include="References\MeasureUnit.cs" />
     <Compile Include="ProcessReports\ProcessReport.cs" />
     <Compile Include="ProviderDatas\ProductData.cs" />

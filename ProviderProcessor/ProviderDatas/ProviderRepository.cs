@@ -2,7 +2,15 @@ using System;
 
 namespace ProviderProcessing.ProviderDatas
 {
-	public class ProviderRepository
+	public interface IProviderRepository
+	{
+		ProviderData FindByProviderId(Guid providerId);
+		void RemoveById(Guid id);
+		void Save(ProviderData data);
+		void Update(ProviderData existingData);
+	}
+
+	public class ProviderRepository : IProviderRepository
 	{
 		public ProviderData FindByProviderId(Guid providerId)
 		{

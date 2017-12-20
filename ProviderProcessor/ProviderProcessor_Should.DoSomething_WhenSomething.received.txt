@@ -1,0 +1,72 @@
+﻿[abc,abc,10,,,ProviderProcessing.References.MeasureUnit,01/01/0001 00:00:00] => Success: False, Error: Product validation errors, Most Critical Message:
+Unknown product name
+[abc,abc,10,,,ProviderProcessing.References.MeasureUnit,12/31/9999 23:59:59] => Success: False, Error: Product validation errors, Most Critical Message:
+Unknown product name
+[abc,abc,10,,,ProviderProcessing.References.MeasureUnit,01/01/2001 00:00:00] => Success: False, Error: Product validation errors, Most Critical Message:
+Unknown product name
+[abc,abc,10,,,,01/01/0001 00:00:00] => Success: False, Error: Product validation errors, Most Critical Message:
+Unknown product name
+[abc,abc,10,,,,12/31/9999 23:59:59] => Success: False, Error: Product validation errors, Most Critical Message:
+Unknown product name
+[abc,abc,10,,,,01/01/2001 00:00:00] => Success: False, Error: Product validation errors, Most Critical Message:
+Unknown product name
+[abc,abc,10,,11,ProviderProcessing.References.MeasureUnit,01/01/0001 00:00:00] => Success: True, Error: OK, Most Critical Message:
+
+[abc,abc,10,,11,ProviderProcessing.References.MeasureUnit,12/31/9999 23:59:59] => Success: True, Error: OK, Most Critical Message:
+
+[abc,abc,10,,11,ProviderProcessing.References.MeasureUnit,01/01/2001 00:00:00] => Success: True, Error: OK, Most Critical Message:
+
+[abc,abc,10,,11,,01/01/0001 00:00:00] => Success: False, Error: Product validation errors, Most Critical Message:
+Bad units of measure
+[abc,abc,10,,11,,12/31/9999 23:59:59] => Success: False, Error: Product validation errors, Most Critical Message:
+Bad units of measure
+[abc,abc,10,,11,,01/01/2001 00:00:00] => Success: False, Error: Product validation errors, Most Critical Message:
+Bad units of measure
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,,ProviderProcessing.References.MeasureUnit,01/01/0001 00:00:00] => Success: False, Error: Product validation errors, Most Critical Message:
+Unknown product name
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,,ProviderProcessing.References.MeasureUnit,12/31/9999 23:59:59] => Success: False, Error: Product validation errors, Most Critical Message:
+Unknown product name
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,,ProviderProcessing.References.MeasureUnit,01/01/2001 00:00:00] => Success: False, Error: Product validation errors, Most Critical Message:
+Unknown product name
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,,,01/01/0001 00:00:00] => Success: False, Error: Product validation errors, Most Critical Message:
+Unknown product name
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,,,12/31/9999 23:59:59] => Success: False, Error: Product validation errors, Most Critical Message:
+Unknown product name
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,,,01/01/2001 00:00:00] => Success: False, Error: Product validation errors, Most Critical Message:
+Unknown product name
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,11,ProviderProcessing.References.MeasureUnit,01/01/0001 00:00:00] => Success: True, Error: OK, Most Critical Message:
+
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,11,ProviderProcessing.References.MeasureUnit,12/31/9999 23:59:59] => Success: True, Error: OK, Most Critical Message:
+
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,11,ProviderProcessing.References.MeasureUnit,01/01/2001 00:00:00] => Success: True, Error: OK, Most Critical Message:
+
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,11,,01/01/0001 00:00:00] => Success: False, Error: Product validation errors, Most Critical Message:
+Bad units of measure
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,11,,12/31/9999 23:59:59] => Success: False, Error: Product validation errors, Most Critical Message:
+Bad units of measure
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,11,,01/01/2001 00:00:00] => Success: False, Error: Product validation errors, Most Critical Message:
+Bad units of measure
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,,ProviderProcessing.References.MeasureUnit,01/01/0001 00:00:00] => Success: False, Error: Outdated data, Most Critical Message:
+
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,,ProviderProcessing.References.MeasureUnit,12/31/9999 23:59:59] => Success: False, Error: Product validation errors, Most Critical Message:
+Unknown product name
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,,ProviderProcessing.References.MeasureUnit,01/01/2001 00:00:00] => Success: False, Error: Product validation errors, Most Critical Message:
+Unknown product name
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,,,01/01/0001 00:00:00] => Success: False, Error: Outdated data, Most Critical Message:
+
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,,,12/31/9999 23:59:59] => Success: False, Error: Product validation errors, Most Critical Message:
+Unknown product name
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,,,01/01/2001 00:00:00] => Success: False, Error: Product validation errors, Most Critical Message:
+Unknown product name
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,11,ProviderProcessing.References.MeasureUnit,01/01/0001 00:00:00] => Success: False, Error: Outdated data, Most Critical Message:
+
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,11,ProviderProcessing.References.MeasureUnit,12/31/9999 23:59:59] => Success: True, Error: OK, Most Critical Message:
+
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,11,ProviderProcessing.References.MeasureUnit,01/01/2001 00:00:00] => Success: True, Error: OK, Most Critical Message:
+
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,11,,01/01/0001 00:00:00] => Success: False, Error: Outdated data, Most Critical Message:
+
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,11,,12/31/9999 23:59:59] => Success: False, Error: Product validation errors, Most Critical Message:
+Bad units of measure
+[abc,abc,10,ProviderProcessing.ProviderDatas.ProviderData,11,,01/01/2001 00:00:00] => Success: False, Error: Product validation errors, Most Critical Message:
+Bad units of measure
